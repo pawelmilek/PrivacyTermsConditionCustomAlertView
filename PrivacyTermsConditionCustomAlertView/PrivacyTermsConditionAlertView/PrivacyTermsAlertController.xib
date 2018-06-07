@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivacyTermsConditionAlertController" customModule="PrivacyTermsConditionCustomAlertView" customModuleProvider="target">
+            <connections>
+                <outlet property="agreeButton" destination="gtw-1w-TnW" id="joO-ht-Zh8"/>
+                <outlet property="alertView" destination="CtT-R3-01N" id="guT-K3-tfk"/>
+                <outlet property="cancelButton" destination="ldq-Bh-W8R" id="Pqi-hk-H7m"/>
+                <outlet property="firstTermDescriptionLabel" destination="Rhs-4b-G4C" id="xi2-Hp-WaC"/>
+                <outlet property="firstTermsSwitch" destination="6rc-LO-0Ks" id="dZE-W8-Ns1"/>
+                <outlet property="secondTermDescriptionLabel" destination="lbn-yk-nWF" id="H48-Yf-eR7"/>
+                <outlet property="secondTermsSwitch" destination="dlS-0s-580" id="D9k-ep-qNH"/>
+                <outlet property="titleLabel" destination="hgZ-IJ-xrr" id="rg8-CI-LBO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="PrivacyTermsConditionAlertController" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CtT-R3-01N">
+                    <rect key="frame" x="27.666666666666657" y="276" width="320" height="260"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="v07-8N-iam" userLabel="Button Stack View">
+                            <rect key="frame" x="0.0" y="220" width="320" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldq-Bh-W8R">
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
+                                    <state key="normal" title="Cancel"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtw-1w-TnW">
+                                    <rect key="frame" x="160" y="0.0" width="160" height="40"/>
+                                    <state key="normal" title="Agree"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="umc-BH-v3I"/>
+                            </constraints>
+                        </stackView>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dlS-0s-580">
+                            <rect key="frame" x="4.9999999999999964" y="135.33333333333331" width="51" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="49" id="9mk-AT-ARH"/>
+                            </constraints>
+                        </switch>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgZ-IJ-xrr">
+                            <rect key="frame" x="8" y="8.0000000000000018" width="304" height="21.666666666666671"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Agree to the License Terms and Privacy Policy" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhs-4b-G4C">
+                            <rect key="frame" x="64" y="63.666666666666686" width="246" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="S4K-tB-CLS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Agree to the iOS, iCloud and Game Center Terms and Conditions and the Apple Privacy Policy" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbn-yk-nWF">
+                            <rect key="frame" x="64" y="124.6666666666667" width="246" height="50.666666666666671"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6rc-LO-0Ks">
+                            <rect key="frame" x="4.9999999999999964" y="65.666666666666686" width="51" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="49" id="WkQ-Fy-OJb"/>
+                            </constraints>
+                        </switch>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="hgZ-IJ-xrr" firstAttribute="leading" secondItem="CtT-R3-01N" secondAttribute="leading" constant="8" id="1pc-Rf-nxG"/>
+                        <constraint firstItem="v07-8N-iam" firstAttribute="centerX" secondItem="CtT-R3-01N" secondAttribute="centerX" id="5WJ-CQ-q6r"/>
+                        <constraint firstItem="v07-8N-iam" firstAttribute="leading" secondItem="CtT-R3-01N" secondAttribute="leading" id="6dO-zL-xG9"/>
+                        <constraint firstItem="Rhs-4b-G4C" firstAttribute="leading" secondItem="6rc-LO-0Ks" secondAttribute="trailing" constant="10" id="A4c-u5-ADO"/>
+                        <constraint firstItem="dlS-0s-580" firstAttribute="top" secondItem="6rc-LO-0Ks" secondAttribute="bottom" constant="38" id="EHY-Cf-cAx"/>
+                        <constraint firstItem="6rc-LO-0Ks" firstAttribute="leading" secondItem="CtT-R3-01N" secondAttribute="leading" constant="5" id="FLO-w6-Ife"/>
+                        <constraint firstAttribute="trailing" secondItem="v07-8N-iam" secondAttribute="trailing" id="Fcv-0X-0Ge"/>
+                        <constraint firstItem="dlS-0s-580" firstAttribute="leading" secondItem="CtT-R3-01N" secondAttribute="leading" constant="5" id="H5J-Or-Ezb"/>
+                        <constraint firstItem="Rhs-4b-G4C" firstAttribute="centerY" secondItem="6rc-LO-0Ks" secondAttribute="centerY" id="Pav-QE-k6z"/>
+                        <constraint firstItem="hgZ-IJ-xrr" firstAttribute="top" secondItem="CtT-R3-01N" secondAttribute="top" constant="8" id="U4F-NT-pQg"/>
+                        <constraint firstAttribute="width" constant="320" id="UFE-fx-0Eq"/>
+                        <constraint firstAttribute="height" constant="260" id="Ul8-C4-9W0"/>
+                        <constraint firstAttribute="trailing" secondItem="Rhs-4b-G4C" secondAttribute="trailing" constant="10" id="VVF-wR-aKS"/>
+                        <constraint firstItem="6rc-LO-0Ks" firstAttribute="top" secondItem="hgZ-IJ-xrr" secondAttribute="bottom" constant="36" id="cYV-Fg-7gy"/>
+                        <constraint firstItem="lbn-yk-nWF" firstAttribute="leading" secondItem="dlS-0s-580" secondAttribute="trailing" constant="10" id="dlC-rJ-4E7"/>
+                        <constraint firstAttribute="bottom" secondItem="v07-8N-iam" secondAttribute="bottom" id="gsq-Ls-kck"/>
+                        <constraint firstAttribute="trailing" secondItem="lbn-yk-nWF" secondAttribute="trailing" constant="10" id="iqu-dP-38k"/>
+                        <constraint firstAttribute="trailing" secondItem="hgZ-IJ-xrr" secondAttribute="trailing" constant="8" id="pVg-GA-g4u"/>
+                        <constraint firstItem="lbn-yk-nWF" firstAttribute="top" secondItem="Rhs-4b-G4C" secondAttribute="bottom" constant="25" id="qHX-0W-mjX"/>
+                        <constraint firstItem="lbn-yk-nWF" firstAttribute="centerY" secondItem="dlS-0s-580" secondAttribute="centerY" id="uEC-pG-TbZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="CtT-R3-01N" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4ZM-Vx-g7n"/>
+                <constraint firstItem="CtT-R3-01N" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Boh-gm-UGM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53"/>
+        </view>
+    </objects>
+</document>
