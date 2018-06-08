@@ -1,5 +1,5 @@
 //
-//  UIButton+AddBorder.swift
+//  UIButton+addBorder.swift
 //  PrivacyTermsConditionCustomAlertView
 //
 //  Created by Pawel Milek on 07/06/2018.

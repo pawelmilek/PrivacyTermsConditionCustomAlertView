@@ -9,12 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
   }
-
-
+  
+  
+  @IBAction func testCustomAlertCreatedInCodeTapped(_ sender: UIButton) {
+    let customAlert = PrivacyTermsAlertControllerCode()
+    customAlert.delegate = self
+    present(customAlert, animated: true, completion: nil)
+  }
+  
+  
   @IBAction func testCustomAlertTapped(_ sender: UIButton) {
     let customAlert = PrivacyTermsAlertController()
     customAlert.delegate = self

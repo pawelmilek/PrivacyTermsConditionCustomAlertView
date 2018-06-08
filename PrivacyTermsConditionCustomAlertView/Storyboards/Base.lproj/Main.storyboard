@@ -18,22 +18,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcb-3F-akP">
-                                <rect key="frame" x="126" y="318" width="123" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcb-3F-akP">
+                                <rect key="frame" x="154.5" y="297" width="66" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Test Custom Alert"/>
+                                <state key="normal" title="Test Alert"/>
                                 <connections>
                                     <action selector="testCustomAlertTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OtC-cW-Bat"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="So4-DM-PmP">
+                                <rect key="frame" x="98" y="240" width="179" height="30"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Test Alert Created in code"/>
+                                <connections>
+                                    <action selector="testCustomAlertCreatedInCodeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pPI-EC-fZt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="So4-DM-PmP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="220" id="bD0-eV-UA9"/>
+                            <constraint firstItem="So4-DM-PmP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ftO-Gs-LRg"/>
+                            <constraint firstItem="Mcb-3F-akP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mCb-sA-WG7"/>
+                            <constraint firstItem="Mcb-3F-akP" firstAttribute="top" secondItem="So4-DM-PmP" secondAttribute="bottom" constant="27" id="wmZ-mI-N2D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

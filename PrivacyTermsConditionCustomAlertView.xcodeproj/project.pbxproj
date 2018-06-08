@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E20FD43120C9C59D002CC3A0 /* PrivacyTermsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20FD43020C9C59D002CC3A0 /* PrivacyTermsKey.swift */; };
 		E20FD43320C9D0F7002CC3A0 /* PrivacyTermsAlertControllerCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20FD43220C9D0F7002CC3A0 /* PrivacyTermsAlertControllerCode.swift */; };
+		E20FD43A20CA1E2E002CC3A0 /* UIColor+CustomRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20FD43920CA1E2E002CC3A0 /* UIColor+CustomRGB.swift */; };
 		E274F35D20C9A702005B0DE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274F35C20C9A702005B0DE3 /* AppDelegate.swift */; };
 		E274F35F20C9A702005B0DE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274F35E20C9A702005B0DE3 /* ViewController.swift */; };
 		E274F36220C9A702005B0DE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E274F36020C9A702005B0DE3 /* Main.storyboard */; };
@@ -17,12 +18,13 @@
 		E274F37020C9A7A3005B0DE3 /* PrivacyTermsAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274F36E20C9A7A3005B0DE3 /* PrivacyTermsAlertController.swift */; };
 		E274F37120C9A7A3005B0DE3 /* PrivacyTermsAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E274F36F20C9A7A3005B0DE3 /* PrivacyTermsAlertController.xib */; };
 		E274F37420C9B07C005B0DE3 /* PrivacyTermsAlertControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274F37320C9B07C005B0DE3 /* PrivacyTermsAlertControllerDelegate.swift */; };
-		E274F37620C9B2D5005B0DE3 /* UIButton+AddBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274F37520C9B2D5005B0DE3 /* UIButton+AddBorder.swift */; };
+		E274F37620C9B2D5005B0DE3 /* UIButton+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E274F37520C9B2D5005B0DE3 /* UIButton+addBorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E20FD43020C9C59D002CC3A0 /* PrivacyTermsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyTermsKey.swift; sourceTree = "<group>"; };
 		E20FD43220C9D0F7002CC3A0 /* PrivacyTermsAlertControllerCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyTermsAlertControllerCode.swift; sourceTree = "<group>"; };
+		E20FD43920CA1E2E002CC3A0 /* UIColor+CustomRGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomRGB.swift"; sourceTree = "<group>"; };
 		E274F35920C9A702005B0DE3 /* PrivacyTermsConditionCustomAlertView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivacyTermsConditionCustomAlertView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E274F35C20C9A702005B0DE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E274F35E20C9A702005B0DE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,7 +35,7 @@
 		E274F36E20C9A7A3005B0DE3 /* PrivacyTermsAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyTermsAlertController.swift; sourceTree = "<group>"; };
 		E274F36F20C9A7A3005B0DE3 /* PrivacyTermsAlertController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivacyTermsAlertController.xib; sourceTree = "<group>"; };
 		E274F37320C9B07C005B0DE3 /* PrivacyTermsAlertControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyTermsAlertControllerDelegate.swift; sourceTree = "<group>"; };
-		E274F37520C9B2D5005B0DE3 /* UIButton+AddBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+AddBorder.swift"; sourceTree = "<group>"; };
+		E274F37520C9B2D5005B0DE3 /* UIButton+addBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+addBorder.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E20FD43420CA1C2F002CC3A0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E20FD43920CA1E2E002CC3A0 /* UIColor+CustomRGB.swift */,
+				E274F37520C9B2D5005B0DE3 /* UIButton+addBorder.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E20FD43520CA1C40002CC3A0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E274F36020C9A702005B0DE3 /* Main.storyboard */,
+				E274F36520C9A704005B0DE3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E20FD43620CA1C7E002CC3A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E274F36320C9A704005B0DE3 /* Assets.xcassets */,
+				E274F36820C9A704005B0DE3 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		E274F35020C9A702005B0DE3 = {
 			isa = PBXGroup;
 			children = (
@@ -68,12 +97,10 @@
 			children = (
 				E274F35C20C9A702005B0DE3 /* AppDelegate.swift */,
 				E274F35E20C9A702005B0DE3 /* ViewController.swift */,
-				E274F36020C9A702005B0DE3 /* Main.storyboard */,
-				E274F36520C9A704005B0DE3 /* LaunchScreen.storyboard */,
-				E274F36320C9A704005B0DE3 /* Assets.xcassets */,
-				E274F36820C9A704005B0DE3 /* Info.plist */,
+				E20FD43420CA1C2F002CC3A0 /* Extension */,
 				E274F37220C9A7F3005B0DE3 /* PrivacyTermsConditionAlertView */,
-				E274F37520C9B2D5005B0DE3 /* UIButton+AddBorder.swift */,
+				E20FD43520CA1C40002CC3A0 /* Storyboards */,
+				E20FD43620CA1C7E002CC3A0 /* Resources */,
 			);
 			path = PrivacyTermsConditionCustomAlertView;
 			sourceTree = "<group>";
@@ -81,10 +108,10 @@
 		E274F37220C9A7F3005B0DE3 /* PrivacyTermsConditionAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				E20FD43220C9D0F7002CC3A0 /* PrivacyTermsAlertControllerCode.swift */,
 				E274F36E20C9A7A3005B0DE3 /* PrivacyTermsAlertController.swift */,
 				E274F36F20C9A7A3005B0DE3 /* PrivacyTermsAlertController.xib */,
 				E274F37320C9B07C005B0DE3 /* PrivacyTermsAlertControllerDelegate.swift */,
+				E20FD43220C9D0F7002CC3A0 /* PrivacyTermsAlertControllerCode.swift */,
 				E20FD43020C9C59D002CC3A0 /* PrivacyTermsKey.swift */,
 			);
 			path = PrivacyTermsConditionAlertView;
@@ -162,9 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20FD43A20CA1E2E002CC3A0 /* UIColor+CustomRGB.swift in Sources */,
 				E274F37420C9B07C005B0DE3 /* PrivacyTermsAlertControllerDelegate.swift in Sources */,
 				E274F35F20C9A702005B0DE3 /* ViewController.swift in Sources */,
-				E274F37620C9B2D5005B0DE3 /* UIButton+AddBorder.swift in Sources */,
+				E274F37620C9B2D5005B0DE3 /* UIButton+addBorder.swift in Sources */,
 				E274F35D20C9A702005B0DE3 /* AppDelegate.swift in Sources */,
 				E20FD43320C9D0F7002CC3A0 /* PrivacyTermsAlertControllerCode.swift in Sources */,
 				E274F37020C9A7A3005B0DE3 /* PrivacyTermsAlertController.swift in Sources */,
@@ -314,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N3HG6C68EY;
-				INFOPLIST_FILE = PrivacyTermsConditionCustomAlertView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PrivacyTermsConditionCustomAlertView/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N3HG6C68EY;
-				INFOPLIST_FILE = PrivacyTermsConditionCustomAlertView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PrivacyTermsConditionCustomAlertView/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

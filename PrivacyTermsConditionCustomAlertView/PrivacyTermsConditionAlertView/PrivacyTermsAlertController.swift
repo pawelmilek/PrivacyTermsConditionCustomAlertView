@@ -58,28 +58,89 @@ class PrivacyTermsAlertController: UIViewController {
 private extension PrivacyTermsAlertController {
   
   func setup() {
-    firstTermsSwitch.tag = 0
-    secondTermsSwitch.tag = 1
-    firstTermsSwitch.addTarget(self, action: #selector(onTapSwitchButton(_:)), for: .valueChanged)
-    secondTermsSwitch.addTarget(self, action: #selector(onTapSwitchButton(_:)), for: .valueChanged)
-    
-    cancelButton.addTarget(self, action: #selector(onTapCancelButton), for: .touchUpInside)
-    agreeButton.addTarget(self, action: #selector(onTapAgreeButton), for: .touchUpInside)
-    agreeButton.isEnabled = false
+    setTermsAndTitleDescription()
+    setTargetActionForButtonsAndSwitches()
   }
   
   func setupStyle() {
-     let alertViewGrayColor = UIColor(red: 224.0/255.0, green: 224.0/255.0, blue: 224.0/255.0, alpha: 1)
-    alertView.layer.cornerRadius = 15
-    alertView.backgroundColor = .white
-    view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
-
-    cancelButton.addBorder(at: .top, with: alertViewGrayColor, width: 1)
-    cancelButton.addBorder(at: .right, with: alertViewGrayColor, width: 1)
-    agreeButton.addBorder(at: .top, with: alertViewGrayColor, width: 1)
+    setAlertViewStyle()
+    setDimViewBackground()
+    setButtonsBorder()
   }
   
   func setupLayout() {
+    disableAgreeButton()
+    animatePresention()
+  }
+  
+}
+
+
+// MARK: - Private - Set Target-Action for buttons and switches
+private extension PrivacyTermsAlertController {
+  
+  func setTargetActionForButtonsAndSwitches() {
+    firstTermsSwitch.addTarget(self, action: #selector(onTapSwitchButton(_:)), for: .valueChanged)
+    secondTermsSwitch.addTarget(self, action: #selector(onTapSwitchButton(_:)), for: .valueChanged)
+    firstTermsSwitch.tag = 0
+    secondTermsSwitch.tag = 1
+    
+    cancelButton.addTarget(self, action: #selector(onTapCancelButton), for: .touchUpInside)
+    agreeButton.addTarget(self, action: #selector(onTapAgreeButton), for: .touchUpInside)
+  }
+  
+}
+
+
+// MARK: - Private - Set alert view style
+private extension PrivacyTermsAlertController {
+  
+  func setTermsAndTitleDescription() {
+    titleLabel.text = titleDescription
+    firstTermDescriptionLabel.text = firstTermsMessage
+    secondTermDescriptionLabel.text = secondTermsMessage
+  }
+  
+  
+  func setAlertViewStyle() {
+    alertView.layer.cornerRadius = 15
+    alertView.backgroundColor = .white
+  }
+  
+}
+
+
+// MARK: - Private - Set dim view background
+private extension PrivacyTermsAlertController {
+  
+  func setDimViewBackground() {
+    view.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+  }
+  
+}
+
+
+// MARK: - Private - Set buttons style
+private extension PrivacyTermsAlertController {
+  
+  func setButtonsBorder() {
+    cancelButton.addBorder(at: .top, with: .separatorGray, width: 0.5)
+    cancelButton.addBorder(at: .right, with: .separatorGray, width: 0.5)
+    agreeButton.addBorder(at: .top, with: .separatorGray, width: 0.5)
+  }
+  
+  func disableAgreeButton() {
+    agreeButton.isEnabled = false
+  }
+  
+}
+
+
+
+// MARK: - Private - Animate presention
+private extension PrivacyTermsAlertController {
+  
+  func animatePresention() {
     alertView.alpha = 0
     alertView.frame.origin.y = alertView.frame.origin.y + 100
     
@@ -90,7 +151,6 @@ private extension PrivacyTermsAlertController {
   }
   
 }
-
 
 // MARK: - Actions
 extension PrivacyTermsAlertController {
